@@ -60,7 +60,7 @@ def sort_by_num_friends():
 #     print(sorted_list)
     sorted_x = sorted(friendship_list.items(), key=operator.itemgetter(1), reverse= True)
     for i in sorted_x:
-        print(i)
+        print(str(i[0]) + " has " + str(i[1]) + " friends")
     pass
 
 for user in users:

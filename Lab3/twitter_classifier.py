@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[25]:
-
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -68,10 +63,3 @@ def process():
 
 
 process()
-
-
-# In[ ]:
-
-
-
-

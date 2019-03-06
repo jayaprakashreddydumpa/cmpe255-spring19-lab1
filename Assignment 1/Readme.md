@@ -58,7 +58,29 @@ A 5 fold Cross_validation and accuracy calculation were then performed on the tr
 
 ### Results
 
-From the cross_validation and accuracy scores we can see that our model is able to predict with an accuracy close to 70%
+From the cross_validation and accuracy scores we can see that our model is able to predict with an accuracy close to 70%.
+The results on a new data set and the prediction results of our model
+
+```
+ |   Predicted |   Actual | Business_id            | Result   |
+|-------------+----------+------------------------+----------|
+|     3.31151 |  3.63095 | RESDUcs7fIiihp38-d6_6g | correct  |
+|     3.46875 |  4.11667 | 4JNXUYY8wbaaDmk3BPzlWw | correct  |
+|     3.369   |  3.71616 | K7lWdNUhCbcnEvI0NhGewg | correct  |
+|     3.13636 |  3.9798  | cYwJA2A6I12KNkm2rtXd5g | wrong    |
+|     2.97135 |  4.27083 | DkYS3arLOhA8si5uUEmHOw | wrong    |
+|     3.01453 |  3.90116 | f4x1YBxkLrZg652xt2KR5g | wrong    |
+|     2.73052 |  3.9026  | 5LNZ67Yw9RD6nf4_UhXOjw | wrong    |
+|     3.02632 |  3.40132 | SMPbvZLSMMb7KU76YNYMGg | correct  |
+|     3.21812 |  3.44295 | ujHiaprwCQ5ewziu0Vi9rw | correct  |
+|     3.12847 |  3.61806 | 2weQS-RnoOBhb1KsHKyoSQ | correct  |
+```
+
+## Observations
+
+After perfoming the tests using multiple models such as Naives Bayes, Decision Trees, Random Forests, SVM and Logistic Regression, we were able to conclude that LogisticRegression gave the best results in terms of cross_validation and accuracy scores.
+
+From the precision, recall and f1 scores, we can see that the accuracy of predicting the positiveand negative reviews is around 75%, but for neutral the score is only 56%. The scores can be improved by only considering the balanced data, .i.e. classifying the reviews as positive and negative instead of using three classes of pos, neg and neutral.
 
 ```
  precision    recall  f1-score   support
@@ -71,12 +93,6 @@ From the cross_validation and accuracy scores we can see that our model is able 
    macro avg       0.67      0.67      0.67     11250
 weighted avg       0.67      0.67      0.67     11250
 ```
-
-## Observations
-
-After perfoming the tests using multiple models such as Naives Bayes, Decision Trees, Random Forests, SVM and Logistic Regression, we were able to conclude that LogisticRegression gave the best results in terms of cross_validation and accuracy scores.
-
-From the precision, recall and f1 scores, we can see that the accuracy of predicting the positiveand negative reviews is around 75%, but for neutral the score is only 56%. The scores can be improved by only considering the balanced data, .i.e. classifying the reviews as positive and negative instead of using three classes of pos, neg and neutral.
 
 ## Authors
 

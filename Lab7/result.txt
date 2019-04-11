@@ -1,0 +1,45 @@
+POLYNOMIAL KERNEL
+[[10  0  0]
+ [ 0  9  0]
+ [ 0  0 11]]
+                 precision    recall  f1-score   support
+
+    Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor       1.00      1.00      1.00         9
+ Iris-virginica       1.00      1.00      1.00        11
+
+      micro avg       1.00      1.00      1.00        30
+      macro avg       1.00      1.00      1.00        30
+   weighted avg       1.00      1.00      1.00        30
+
+------------------------------------------------------
+GAUSSIAN KERNEL
+[[10  0  0]
+ [ 0  9  0]
+ [ 0  0 11]]
+                 precision    recall  f1-score   support
+
+    Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor       1.00      1.00      1.00         9
+ Iris-virginica       1.00      1.00      1.00        11
+
+      micro avg       1.00      1.00      1.00        30
+      macro avg       1.00      1.00      1.00        30
+   weighted avg       1.00      1.00      1.00        30
+
+------------------------------------------------------
+SIGMOID KERNEL
+[[ 0 10  0]
+ [ 0  9  0]
+ [ 0 11  0]]
+                 precision    recall  f1-score   support
+
+    Iris-setosa       0.00      0.00      0.00        10
+Iris-versicolor       0.30      1.00      0.46         9
+ Iris-virginica       0.00      0.00      0.00        11
+
+      micro avg       0.30      0.30      0.30        30
+      macro avg       0.10      0.33      0.15        30
+   weighted avg       0.09      0.30      0.14        30
+
+------------------------------------------------------
